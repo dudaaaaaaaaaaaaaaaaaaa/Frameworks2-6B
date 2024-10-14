@@ -1,0 +1,4 @@
+.navGradiente{
+    background: rgb(58,85,180);
+background: linear-gradient(90deg, rgba(58,85,180,1) 9%, rgba(150,58,180,1) 54%, rgba(58,67,180,1) 87%);
+}
