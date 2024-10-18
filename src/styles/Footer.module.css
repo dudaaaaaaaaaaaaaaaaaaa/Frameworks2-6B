@@ -1,0 +1,4 @@
+.footerGradiente{
+    background: rgb(148,233,212);
+background: radial-gradient(circle, rgba(148,233,212,1) 0%, rgba(148,233,198,1) 90%);
+}
