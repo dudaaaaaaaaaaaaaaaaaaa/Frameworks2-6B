@@ -11,6 +11,7 @@ export default function Menu() {
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/noticias">Noticías</Nav.Link>
+              <Nav.Link href="/promisse">Promessa</Nav.Link>
               
             </Nav>
           </Navbar.Collapse>
