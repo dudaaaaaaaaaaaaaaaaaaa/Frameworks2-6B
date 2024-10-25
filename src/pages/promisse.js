@@ -7,11 +7,11 @@ export default function Promisse(){
     setTimeout(()=>{
         setPrometido("é uma dívida")
         document.title="promessa é dívida"
-    }, 2000);
+    }, 4000);
     return <>
     <Menu/>
     <Container>
-        Promessa { prometido === ""? "<carregando>": prometido} 
+        Promessa { prometido === ""? <img src="./fbc00f81999693.5d10c08723f94.gif" width={80} hight={40}/>: prometido} 
     </Container>
     <Footer/>
 
