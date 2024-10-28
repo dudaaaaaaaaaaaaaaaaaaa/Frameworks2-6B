@@ -1,13 +1,17 @@
 import Menu from "./component/navbar";
 import { Container } from "react-bootstrap";
 import Footer from "./component/footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export default function Promisse(){
-   const[prometido, setPrometido] = useState("")
-    setTimeout(()=>{
-        setPrometido("é uma dívida")
+   const[prometido, setPrometido] = useState("");
+   useEffect(()=>{
+    setTimeout(async ()=>{
+        const altera= await mudaTexto("olá, texto novo")
+        setPrometido(altera);
         document.title="promessa é dívida"
     }, 4000);
+   })
+    
     return <>
     <Menu/>
     <Container>
@@ -16,4 +20,11 @@ export default function Promisse(){
     <Footer/>
 
     </>
+}
+function mudaTexto(texto){
+   return new Promise((resolva)=>
+    setTimeout(()=>{
+    resolva(texto);
+    },1000))
+    
 }
