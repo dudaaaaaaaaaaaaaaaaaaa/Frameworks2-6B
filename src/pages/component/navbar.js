@@ -12,6 +12,7 @@ export default function Menu() {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/noticias">Noticías</Nav.Link>
               <Nav.Link href="/promisse">Promessa</Nav.Link>
+              <Nav.Link href="/pages">Pages</Nav.Link>
               
             </Nav>
           </Navbar.Collapse>
